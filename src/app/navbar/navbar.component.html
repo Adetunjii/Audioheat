@@ -1,3 +1,65 @@
-<p>
-  navbar works!
-</p>
+<header class="h-100">
+
+  <mdb-navbar SideClass="navbar navbar-1 fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="navbar-brand " routerLink="">
+        <img src="../../assets/audio_heat_light_2.jpg" height="40" alt="audio heat">
+      </a>
+    </mdb-navbar-brand>
+
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light px-2" mdbWavesEffect>
+          <a class="nav-link hoverable px-2" mdbBtn color="orange" size="sm"  routerLink="">Home</a>
+        </li>
+
+        <li class="nav-item dropdown px-2" dropdown>
+            <a dropdownToggle mdbWavesEffect mdbBtn size="sm" color="pink" type="button" class="px-2 nav-link hoverable dropdown-toggle waves-light" mdbWavesEffect>
+            Music<span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                <a class="dropdown-item waves-light hoverable" mdbWavesEffect  routerLink="music/singles">Singles</a>
+                <a class="dropdown-item waves-light hoverable" mdbWavesEffect routerLink="music/albums">Albums</a>
+            </div>
+        </li>
+
+        <li class="nav-item waves-light px-2" mdbWavesEffect>
+          <a class="nav-link hoverable px-2" mdbBtn size="sm"  color="green" >News</a>
+        </li>
+
+
+      </ul>
+
+      <form class="form-inline waves-light" mdbWavesEffect>
+        <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <a role="button" type="submit" class="hoverable" size="sm" outline="true" mdbBtn>
+              <img src="../../assets/png/icons8-search-20.png">
+            </a>
+        </div>
+    </form>
+
+    <ul class="navbar-nav my-3">
+
+    <div>
+      <li class="nav-item">   
+        <a role="button" mdbBtn routerLink="cart" class="nav-link">
+            <img src="https://img.icons8.com/color/20/000000/add-shopping-cart.png">  
+          <span class="badge badge-primary ml-2">!</span>
+        </a>
+      </li>
+    </div>
+
+  </ul>
+
+    </links>
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro-2">
+    <div class="full-bg-img">
+      <div class="mask rgba-pink-slight flex-center">
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->

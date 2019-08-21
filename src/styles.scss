@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+
+body{
+  font-family: 'Comfortaa', cursive;
+}
+.view {
+  background: url("./assets/audio_heat_light_2.jpg")no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+background-color: rgba(255, 124, 2, 0.644);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: rgba(255, 124, 2, 0.644);
+  }
+}
+
+.brandFont{
+  font-family: 'Cabin Sketch';
+  font-size: 35px;
+
+};
+.lilFont{
+  font-family: 'Cabin Sketch';
+
+}
+.footer-gradient{
+  background-image: linear-gradient(to bottom, rgb(255,124,2), rgb(245,42,191));
+
+}
+.header-gradient{
+  background-image: linear-gradient(to bottom, rgb(255,124,2), rgb(245,42,191));
+
+}
+.color-gradient{
+  background-color: rgb(54, 52, 52);
+  color: white;
+}
+mdb-card{
+  border-color:  rgba(8, 8, 8, 0.788);
+  cursor: pointer
+}
+.card{
+  height: 10%;
+  cursor: pointer;
+}
+.nav-font {
+  font-family: 'Pacifico', cursive;
+  color: white;
+}

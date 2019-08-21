@@ -1,0 +1,113 @@
+[ {
+    "id": 1,
+    "name": "Sad",
+    "type": "audio",
+    "dateOfRelease": "09/10/2018",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "2:46",
+    "trackNumber": 4,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/audio_heat_light_1.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Moonlight",
+    "type": "audio",
+    "dateOfRelease": "09/10/2018",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "2:15",
+    "trackNumber": 3,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/audio_heat_light_2.jpg"
+
+
+  },
+
+  {
+    "id": 3,
+    "name": "Alone Part 3",
+    "type": "audio",
+    "dateOfRelease": "new Date('09/10/2018')",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "(1:50)",
+    "trackNumber": 2,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/audio_heat_light_1.jpg"
+
+
+  },
+
+
+  {
+    "id": 4,
+    "name": "the remedy for a broken heart",
+    "type": "audio",
+    "dateOfRelease": "new Date('09/10/2018')",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "(2:40)",
+    "trackNumber": 5,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/audio_heat_light_2.jpg"
+
+
+  },
+
+  {
+    "id": 5,
+    "name": "Floor 555",
+    "type": "audio",
+    "dateOfRelease": "new Date('09/10/2018')",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "(1:33)",
+    "trackNumber": 6,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/audio_heat_light_1.jpg"
+
+
+  },
+
+  {
+    "id": 6,
+    "name": "Numb",
+    "type": "audio",
+    "dateOfRelease": "new Date('09/10/2018')",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "(3:06)",
+    "trackNumber": 7,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/Eminem/Cover.jpg"
+
+
+  },
+
+  {
+    "id": 6,
+    "name": "Numb",
+    "type": "audio",
+    "dateOfRelease": "new Date('09/10/2018')",
+    "artist": "XXXtentacion",
+    "album": "?",
+    "genre": "pop",
+    "trackLength": "(3:06)",
+    "trackNumber": 7,
+    "description": " Listen and give us your comments",
+    "artCover": "/assets/audio_heat_light_1.jpg"
+
+
+  }
+
+
+]

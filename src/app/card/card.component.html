@@ -1,0 +1,35 @@
+<div class="card z-depth-5">
+  <div class="card-img">
+    <img src={{track.imageUrl}} alt="" class="img-fluid" height="30">
+  </div>
+
+  <div class="card-body">
+    <div class="card-title">
+      <h5 class="lilFont blue-text">{{track.artist}} - {{track.song_name}}</h5>
+      <hr class="hr-dark">
+      <div class="card-text">
+        Genre: {{track.genre}} <br />
+        Date Of Relase: {{track.dateOfRelease}}<br />
+        Track Length: {{track.length}}<br />
+        Composers: {{track.composers}}<br />
+
+      </div>
+      <hr class="hr-dark">
+
+      <div class="container">
+
+
+        <button size="small" mdbBtn style="padding: 5px" color="elegant" (click)="sendToCart()">
+          <span>Add to cart</span>
+          <span class="mr-1 ml-1 pl-1 pr-1"><img
+              src="https://img.icons8.com/color/20/000000/add-shopping-cart.png"></span>
+        </button>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
