@@ -1,22 +1,30 @@
-<div class="container my-5" >
+<div class="container my-5">
   <div class="row">
     <strong class="pt-2 pl-4 brandFont">SORT BY:</strong>
     <div class="button-group pl-3 mt-2">
-      <button size="sm" color="elegant" mdbBtn>name</button>
-      <button size="sm" color="unique" mdbBtn>album</button>
-      <button size="sm" color="info" mdbBtn>artist</button>
-      <button size="sm" color="teal" mdbBtn>genre</button>
-      <button size="sm" color="purple" mdbBtn>Release Date</button>
+      <button size="sm" gradient="night-fade" class="text-white" mdbBtn (click)="sortByName()">name</button>
+      <button size="sm" gradient="near-moon" class="text-white" mdbBtn (click)="sortByArtist()">artist</button>
+      <button size="sm" gradient="amy-crisp" class="text-white" mdbBtn (click)="sortByGenre()">genre</button>
+      <div class="btn-group" mdbDropdown>
+        <button size="sm" gradient="peach" mdbDropdownToggle class="dropdown-toggle text-white" mdbBtn>Release
+          Date</button>
 
+        <div class="dropdown-menu">
+          <a class="dropdown-item my-1" role="button" mdbBtn gradient="frozen-dreams" size="md"
+            (click)="sortByReleaseDateOlder()">Older</a>
+          <a class="dropdown-item" role="butotn" mdbBtn gradient="juicy-peach" size="md"
+            (click)="sortByReleaseDateNewer()">Newer</a>
+        </div>
+      </div>
     </div>
 
   </div>
   <div class="row">
 
-<div class="col-sm-6 col-md-4 col-lg-3 my-3" *ngFor="let track of tracks">
-<app-card [track]="track" class="hoverable" routerLink="/music/singles/{{track.song_name}}"></app-card>
+    <div class="col-sm-6 col-md-4 my-3" *ngFor="let track of tracks">
+      <app-card [track]="track" class="hoverable"></app-card>
 
-</div>
+    </div>
 
-</div>
+  </div>
 </div>

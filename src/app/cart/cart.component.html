@@ -1,14 +1,33 @@
-<div class="container">
-  <mdb-card class="mb-5 p-5">
-    <div class="table-responsive">
-      <table hoverable="true" striped="true" class="table" bordered="true" mdbTable>
-        <thead class="black white-text">
-          <tr>
-            <th scope="col" *ngFor="let header of headers">{{header}}</th>
+<div class="my-5">
+  <table class="text-center" mdbTable striped="true" bordered="true" hoverable="true">
+    <thead>
+      <tr>
+        <th *ngFor="let header of headers" scope="col">{{header}} </th>
+      </tr>
+    </thead>
+    <tbody>
 
-          </tr>
-        </thead>
-      </table>
-    </div>
-  </mdb-card>
+      <tr mdbTableCol *ngFor="let song of cart; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{song.name}}</td>
+        <td>{{song.artists}}</td>
+        <td>
+          <span class="mx-3">
+            <a role="button" mdbBtn size="sm" class="btn" href={{song.downloadUrl}} target="blank" mdbWavesEffect>
+              <img src="../../assets/icons/icons8-download-16.png">
+            </a>
+          </span>
+          <span class="mx-3">
+            <button mdbBtn size="sm" class="btn waves" (click)="removeSong(song.name)" mdbWavesEffect>
+              <img src="../../assets/icons/icons8-trash-16.png" alt="remove" style="cursor:pointer">
+            </button>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="text-right" *ngIf="cart.length > 0">
+    <button class="btn" size="md" mdbBtn color="black" rounded="true" mdbWavesEffect (click)="downloadAsZip()">Download
+      as Zip</button>
+  </div>
 </div>

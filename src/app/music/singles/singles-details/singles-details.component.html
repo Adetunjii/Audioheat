@@ -1,12 +1,17 @@
-<div class="container my-2">
-<div class="justify-content-center">
-  <img src={{song.imageUrl}} alt="art covers go here">
+<div class="container" style="margin-top: 100px;">
+  <div class="text-center my-5">
+    <div class="my-5">
+      <h3 style="text-decoration: underline" class="header-3">{{song.artists}} - {{song.name}} </h3>
+    </div>
+    <img src={{song.imageUrl}} alt="art covers go here">
+    <div class="my-5">
+      <p>{{song.description}}</p>
+    </div>
 
 
-<div>{{song.name}}</div>
-<div>{{song.artist}}</div>
+    <a role="button" target="blank" mdbBtn size="sm" color="red" href={{song.downloadUrl}}>download</a>
 
-</div>
+  </div>
 
 
 </div>

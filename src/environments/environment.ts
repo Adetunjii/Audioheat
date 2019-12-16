@@ -9,7 +9,7 @@ export const environment = {
     authDomain: "audioheat-b3d4a.firebaseapp.com",
     databaseURL: "https://audioheat-b3d4a.firebaseio.com",
     projectId: "audioheat-b3d4a",
-    storageBucket: "audioheat-b3d4a.appspot.com",
+    storageBucket: "audioheat-b3d4a.appspot.com", 
     messagingSenderId: "747706523078"
   }
 };

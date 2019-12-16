@@ -3,14 +3,22 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
-
-body{
-  font-family: 'Comfortaa', cursive;
+body {
+  font-family: 'Dank Mono', 'Comfortaa', 'Tahoma', cursive;
+  margin: 0 auto;
+  padding: 0 auto;
 }
+
+main {
+  text-align: center;
+  position: relative;
+}
+
 .view {
-  background: url("./assets/audio_heat_light_2.jpg")no-repeat center center;
+  background: url("./assets/audio_heat_light_1.jpg")no-repeat center center;
   background-size: cover;
-  height: 50vh;
+  height: 80vh;
+  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -19,44 +27,53 @@ body{
 }
 
 .top-nav-collapse {
-background-color: rgba(255, 124, 2, 0.644);
+  background-color: rgba(234, 2, 255, 0.2);
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: rgba(255, 124, 2, 0.644);
+    background-color: rgba(245, 42, 191, 0.2);
   }
 }
 
-.brandFont{
+.brandFont {
   font-family: 'Cabin Sketch';
   font-size: 35px;
 
-};
-.lilFont{
+}
+
+;
+
+.lilFont {
   font-family: 'Cabin Sketch';
 
 }
-.footer-gradient{
-  background-image: linear-gradient(to bottom, rgb(255,124,2), rgb(245,42,191));
+
+.footer-gradient {
+  background-image: linear-gradient(to bottom, rgb(255, 124, 2), rgb(245, 42, 191));
 
 }
-.header-gradient{
-  background-image: linear-gradient(to bottom, rgb(255,124,2), rgb(245,42,191));
+
+.header-gradient {
+  background-image: linear-gradient(to bottom, rgb(255, 124, 2), rgb(245, 42, 191));
 
 }
-.color-gradient{
+
+.color-gradient {
   background-color: rgb(54, 52, 52);
   color: white;
 }
-mdb-card{
-  border-color:  rgba(8, 8, 8, 0.788);
+
+mdb-card {
+  border-color: rgba(8, 8, 8, 0.788);
   cursor: pointer
 }
-.card{
+
+.card {
   height: 10%;
   cursor: pointer;
 }
+
 .nav-font {
   font-family: 'Pacifico', cursive;
   color: white;

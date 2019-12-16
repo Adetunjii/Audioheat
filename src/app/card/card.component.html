@@ -1,30 +1,31 @@
-<div class="card z-depth-5">
+<div class="card">
   <div class="card-img">
-    <img src={{track.imageUrl}} alt="" class="img-fluid" height="30">
+    <img src={{track.imageUrl}} alt="" class="img-fluid z-depth-3 rounded" height="30"
+      routerLink="/music/singles/{{track.id}}">
   </div>
 
-  <div class="card-body">
+  <div class="card-body hoverable rounded">
     <div class="card-title">
-      <h5 class="lilFont blue-text">{{track.artist}} - {{track.song_name}}</h5>
+      <h5 class="lilFont blue-text" routerLink="/music/singles/{{track.id}}">{{track.artist}} - {{track.song_name}}</h5>
       <hr class="hr-dark">
       <div class="card-text">
-        Genre: {{track.genre}} <br />
-        Date Of Relase: {{track.dateOfRelease}}<br />
-        Track Length: {{track.length}}<br />
+        <span *ngIf="track.featuring">Featuring: {{track.featuring}}</span><br />
+        Album: {{track.album}} <br />
         Composers: {{track.composers}}<br />
-
+        Date Of Relase: {{track.date_of_release}}<br />
+        Genre: {{track.genre}} <br />
+        Track Number: {{track.trackno}}<br />
+        Track Length: {{track.length}}<br />
       </div>
-      <hr class="hr-dark">
 
-      <div class="container">
-
-
-        <button size="small" mdbBtn style="padding: 5px" color="elegant" (click)="sendToCart()">
-          <span>Add to cart</span>
-          <span class="mr-1 ml-1 pl-1 pr-1"><img
-              src="https://img.icons8.com/color/20/000000/add-shopping-cart.png"></span>
+      <div class="container text-right">
+        <button size="small" mdbBtn class="myColor p-1"
+          (click)="sendToCart(track.id, track.song_name, track.artist, track.downloadUrl)" mdbWavesEffect>
+          <span class="mr-1 ml-1 pl-1 pr-1">
+            <img src="https://img.icons8.com/color/20/000000/add-shopping-cart.png">
+          </span>
         </button>
-
+        <hr class="hr-dark">
       </div>
 
 

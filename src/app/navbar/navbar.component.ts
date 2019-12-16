@@ -1,20 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import {  auth  } from 'firebase';
+import { auth } from 'firebase';
+import { CartService } from '../shared/cart.service';
+import { SearchService } from '../shared/search.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent{
+export class NavbarComponent implements OnInit {
+  cart;
+  searchValue = "";
 
-  constructor(public afAuth: AngularFireAuth) { }
-
-
-  login(){
-    this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider())
+  constructor(private searchService: SearchService, public cartService: CartService) {
   }
-  logOut(){
-    this.afAuth.auth.signOut();
+
+  search() {
+    this.searchService.search(this.searchValue);
+  }
+
+  ngOnInit() {
   }
 }
+

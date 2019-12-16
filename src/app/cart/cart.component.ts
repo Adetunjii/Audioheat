@@ -1,23 +1,46 @@
-import { Component, OnInit } from '@angular/core';
-import { CartService } from '../cart.service';
+import { Component, OnInit, OnChanges } from '@angular/core';
+import { CartService } from '../shared/cart.service';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { HttpClient } from '@angular/common/http';
+import * as JSZip from 'jszip';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss']
 })
-export class CartComponent implements OnInit {
+export class CartComponent {
 
-  headers = ['id', 'name', 'artist', 'actions']
+  headers = ['#', 'name', 'artist', 'actions'];
 
-
-  constructor(private cartService: CartService) { }
-
-  ngOnInit() {
+  cart = []
+  constructor(private afs: AngularFirestore, private http: HttpClient, private cartService: CartService) {
+    this.cart = this.cartService.displaySongs();
+    console.log(this.cart);
   }
 
-  cart() {
-    console.log(this.cartService.fetchSong())
-  }  
+  removeSong(name) {
+    this.cart = this.cartService.removeSong(name);
+  }
+  // var counter = 0;
+  // var zipFileName = "Audioheat.zip"
+  // for (var song of this.cart) {
+  //   var urls: [] = song.downloadUrl;
 
+  // }
+
+  // urls.forEach((url) => {
+  //   var fileName = song.name;
+
+  //   JSZip.JSZipUtils.getBinaryContent(url, (err, data) => {
+  //     if (err) {
+  //       throw err;
+  //     }
+  //     zip.file(fileName, data, { binary: true });
+  //     counter++;
+  //     if (counter == urls.length) {
+  //       zip.generateAsync({ type: 'blob' }).then((content) => saveAs(content, zipFileName))
+  //     }
+  //   })
+  // })
 }

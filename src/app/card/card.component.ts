@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ITrack } from '../music/track.model';
-import { CartService } from '../cart.service';
+import { CartService } from '../shared/cart.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -9,14 +10,18 @@ import { CartService } from '../cart.service';
 })
 export class CardComponent implements OnInit {
   @Input() track: ITrack;
-  constructor(public cartService: CartService) { }
+  isDisabled = false;
+
+  constructor(private route: ActivatedRoute, public cartService: CartService) { }
+
+  sendToCart(id, name, artist, downloadUrl) {
+    this.cartService.getSong(id, name, artist, downloadUrl);
+  };
+
 
   ngOnInit() {
+
   }
 
-  sendToCart() {
-    this.cartService.fetchSong();
-  }
-  
 
 }

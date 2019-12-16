@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\User\\Documents\\projects\\audioheat"
+		},
+		{
+			"name": "audioheat @ master",
+			"uri": "gitlens://master/c:/Users/User/Documents/projects/audioheat?{\"path\":\"/c:/Users/User/Documents/projects/audioheat\",\"ref\":\"master\",\"repoPath\":\"c:/Users/User/Documents/projects/audioheat\"}"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
