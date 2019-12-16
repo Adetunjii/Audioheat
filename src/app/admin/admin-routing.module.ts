@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { NewSingleComponent } from './dashboard/new-single/new-single.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewAlbumComponent } from './dashboard/new-album/new-album.component';
-import { AdminComponent } from './admin.component';
 
 const routes: Routes = [
     {
