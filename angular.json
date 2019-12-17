@@ -33,7 +33,6 @@
               "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
               "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css"
-
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.js",
@@ -42,12 +41,10 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -57,13 +54,11 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ],
+              "budgets": [{
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
             }
@@ -94,12 +89,9 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-             
               "src/styles.scss"
             ],
-            "scripts": [
-          
-            ],
+            "scripts": [],
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -150,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "Audioheat"
+  "defaultProject": "Audioheat",
+  "cli": {
+    "analytics": false
+  }
 }
